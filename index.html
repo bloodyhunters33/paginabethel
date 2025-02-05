@@ -32,30 +32,39 @@
         </nav>
     </header>
     <!-- Sección 1: Foto inicial con frase -->
+    
     <section class="hero">
-        <div class="hero-text">
-            <h1>Esta es mi casa hasta que Cristo venga</h1>
+        <div class="hero-text uk-animation-fade" tabindex="0" >
+            <h1 class="uk-text-center"> Esta es mi casa hasta que Cristo venga</h1>
         </div>
         
     </section>
 
-
+    
     <!-- Sección 2: Acerca de -->
     <section id="acerca">
         <h2>Fraternidad Cristiana Betel</h2>
         <div class="uk-grid-medium uk-flex-middle" uk-grid>
             <div class="uk-width-auto">
-                <img class="uk-comment-avatar" src="images/avatar.jpg" width="80" height="80" alt="">
+                <img class="uk-comment-avatar" src="media/logo.png" width="80" height="80" alt="">
             </div>
             <div class="uk-width-expand">
-                <h4 class="uk-comment-title uk-margin-remove"><a class="uk-link-reset" href="#">Author</a></h4>
+                
                 <ul class="uk-comment-meta uk-subnav uk-subnav-divider uk-margin-remove-top">
-                    <li><a href="#">12 days ago</a></li>
-                    <li><a href="#">Reply</a></li>
+                    <li><a href="#">Iglesia Bethel Matagalpa</a></li>
+                    <li><a href="#">¡Donde somos una gran familia!</a></li>
                 </ul>
             </div>
         </div>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, repudiandae. Dolor porro temporibus tempore saepe delectus error eaque dolores reiciendis soluta sunt accusantium, quia iste deserunt similique, fuga provident magni!</p>
+    
+        <div class="content-wrapper uk-transition-toggle">
+            <p class="short-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, repudiandae.</p>
+            <button class="leer-mas">Leer más</button>
+        </div>
+    
+        <p class="full-text">
+            Dolor porro temporibus tempore saepe delectus error eaque dolores reiciendis soluta sunt accusantium, quia iste deserunt similique, fuga provident magni!
+        </p>
     </section>
 
     <!-- Sección 3: Información de Pastores -->
@@ -63,11 +72,21 @@
         <h2>Pastores</h2>
         <div class="pastores-list">
             <div class="pastor">
-                <h3>Nombre del Pastor</h3>
+                <h3>Erick Sanders Reyes</h3>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Magnam dolor veniam, harum omnis fugit optio eius voluptatibus id facere quia amet ab delectus laudantium earum cupiditate architecto labore, nisi nulla.</p>
-                <a href="https://www.instagram.com" target="_blank">Instagram</a>
+                
             </div>
         </div>
+        <div class="content-wrapper uk-transition-toggle">
+            <p class="short-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse, repudiandae.</p>
+            <button class="leer-mas">Leer más</button>
+        </div>
+    
+        <p class="full-text">
+            Dolor porro temporibus tempore saepe delectus error eaque dolores reiciendis soluta sunt accusantium, quia iste deserunt similique, fuga provident magni!
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+        </p>
+    </section>
     </section>
 
     <!-- Sección 4: Compromiso -->
@@ -110,6 +129,13 @@
             </audio>
         </div>
     </section>
-
+    <script>
+        document.querySelectorAll(".leer-mas").forEach(button => {
+            button.addEventListener("click", function() {
+                let fullText = this.parentElement.nextElementSibling; // Busca el siguiente elemento después del contenedor del botón
+                fullText.classList.toggle("active");
+            });
+        });
+    </script>
 </body>
 </html>

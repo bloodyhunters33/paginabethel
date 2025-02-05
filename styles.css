@@ -74,6 +74,7 @@ header nav ul img {
 }
 
 .hero h1 {
+    animation-duration: 5s;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -90,11 +91,12 @@ header nav ul img {
 /* Sección general */
 section {
     padding: 30px 15px;
-    margin: 30px 0;
+    margin: 20px 20px;
     background: #ffffff; /* Blanco */
-    border-radius: 8px;
+    border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
+
 
 section h2 {
     font-size: 2.5em;
@@ -272,3 +274,67 @@ body {
         font-size: 1.8em;
     }
 }
+
+/* Estilo para la sección acerca de iglesia bethel*/
+#acerca {
+    padding: 30px;
+    margin: 20px 20px;
+    
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
+.leer-mas {
+    display: block;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: rgba(0, 123, 255, 0.2); /* Azul suave de fondo (transparente) */
+    color: rgba(0, 123, 255, 0.8); /* Azul oscuro para el texto */
+    font-weight: bold;
+    border: 2px solid rgba(0, 123, 255, 0.2); /* Borde sutil en azul */
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 123, 255, 0.1); /* Sombra delicada en azul */
+}
+
+/* Efecto hover del botón */
+.leer-mas:hover {
+    background: rgba(0, 123, 255, 0.3); /* Fondo amarillo suave al pasar el ratón */
+    color: white; /* El texto se vuelve blanco */
+    box-shadow: 0 6px 12px rgba(255, 193, 7, 0.2); /* Sombra más suave amarilla */
+    transform: translateY(-2px); /* Efecto de elevación sutil */
+}
+
+/* Efecto focus (cuando se hace clic o se selecciona) */
+.leer-mas:focus {
+    outline: none; /* Eliminar el borde predeterminado */
+    box-shadow: 0 0 0 4px  rgba(255, 193, 7, 0.4); /* Sombra azul más pronunciada */
+}
+
+
+/* Ocultar el texto completo inicialmente */
+.full-text {
+    display: none;
+}
+
+/* Mostrar texto al hacer clic */
+.full-text.active {
+    display: block;
+}
+
+/* Estilo para la sección acerca de iglesia bethel*/
+#pastores {
+    padding: 30px;
+    margin: 20px 20px;
+    
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+}
+
